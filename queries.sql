@@ -16,7 +16,7 @@ GROUP BY c.category_name, c.category_id
 ORDER BY c.category_name, c.category_id;
 
 -- Q3: Show only those categories that have more than 2 books.
-SELECT c.category_id, c.category_name, COUNT(*) AS 'count' 
+SELECT c.category_id, c.category_name, COUNT(*) AS books_count 
 FROM books b
 JOIN categories c
 ON b.category_id = c.category_id
